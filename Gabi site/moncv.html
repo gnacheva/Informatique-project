@@ -1,34 +1,121 @@
 <html>
 	<head>
-		<title>Gabi's site</title>
-		<link rel="stylesheet" type="text/css" href="mysite.css">
+		<title>Mon CV</title>
 		<meta charset="UTF-8">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="mysite.css">
 	</head>
 	<body>
-		<nav>
+		<div class="navigation">
 			<ul>
-				<li><a>Page d'accueil</a></li>
+				<li><a href="mysite.html">Page d'accueil</a></li>
 				<li>
 					<a>Pour moi</a>
 					<ul>
 						<li><a href="moncv.html">Mon CV</a></li>
-						<li><a>Mes images</a></li>
+						<li><a href="mesphotos.html"> Mes images</a></li>
 					</ul>
 				</li>
 				<li>
 					<a>Galerie</a>
 					<ul>
-						<li><a>UT-Sofia</a></li>
-						<li><a>Pravets</a></li>
-						<li><a>Mes photos</a></li>
+						<li><a href="galerie.html">UT-Sofia</a></li>
+						<li><a href="pravets.html">Pravets</a></li>
+						<li><a href="mesphotos.html">Mes photos</a></li>
 					</ul>
 				</li>
-				<li><a>Un tableur</a></li>
+				<li><a href="untableur.html">Un tableur</a></li>
 			</ul>
-		</nav>
-		<article> 
-			<h1> Bonjour! </h1>
-		</article>
+		</div>
 		
-	</body>
+		<div class="content">
+				<div class="panel-group" id="acordion">
+					<div class="panel panel-primary">
+					    <!--     ..............................  -->
+						<div class="panel-heading">
+							<h3 class="panel-title">
+								<a href="#collapse1" data-toggle="collapse" data-parent="#acordion">
+									INFORMATION PERSONNELLE
+								</a>
+							</h3>
+						</div>
+					    <div id="collapse1" class="panel-collapse collapse">
+							<div class="panel-body">
+								<img src="images/Gabi.jpg" width="200px" style="float: left; margin-right: 10;">
+									<p><b>NOME: </b>Nacheva Gabriela </p>
+									<p><b>DATE DE NAISESSANCE </b>05.09.1999 </p>
+									<p><b>ADRESSE: </b> Rue “Dimitar Gruncharov”, 2161, Pravets, Bulgarie </p>
+									<p><b> TELEPHONE: </b> +359877389370 </p>
+									<p><b> EMAIL: </b> gabriela_nacheva1276@abv.bg  </p>
+							</div>
+						</div>
+						<!--     ..............................  -->
+						<div class="panel-heading">
+							<h3 class="panel-title">
+								<a href="#collapse2" data-toggle="collapse" data-parent="#acordion">
+									ÉDUCATION ET FORMATION
+								</a>
+							</h3>
+						</div>
+					    <div id="collapse2" class="panel-collapse collapse">
+							<div class="panel-body">
+								<p><b>École </b> “Vasil Levski”, Pravets, Bulgarie - <i>2006-2013</i></p>
+								<p><b>Lycée </b> “Aleko Konstantinov”, Pravets, Bulgarie - <i>2013-2018</i></p>
+								<p><i>&nbsp Anglais langue</i></p>
+								<p><b>Universitė</b> Technique de Sofia - Facultė Francophone, Sofia, Bulgarie - <i>2018-...</i></p>
+								<p><i>&nbsp Ingénierie électrique</i></p>
+							</div>
+						</div>
+						
+						<div class="panel-heading">
+							<h3 class="panel-title">
+								<a href="#collapse3" data-toggle="collapse" data-parent="#acordion">
+									COMPÉTENCES PERSONNELLES
+								</a>
+							</h3>
+						</div>
+					    <div id="collapse3" class="panel-collapse collapse">
+							<div class="panel-body">
+								<p ><b> Langue(s) maternelle(s)</b> Bulgare
+								<p><b> Autre(s) langue(s)</b> 
+								<table>
+									<tr>
+										<th> </th>
+										<th> Écouter </th>
+										<th> Lire  </th>
+										<th> Prendre part à une conversation  </th>
+										<th> S’exprimer oralement en continu </th>
+										<th> Écrire </th>
+									</tr>
+									<tr>
+										<td> anglais </td>
+										<td> B2 </td>
+										<td> C1 </td>
+										<td> C1 </td>
+										<td> C1 </td>
+										<td> B2 </td>
+									</tr>
+									<tr>
+										<td> francais </td>
+										<td> A2 </td>
+										<td> B1 </td>
+										<td> A2 </td>
+										<td> A2 </td>
+										<td> A2 </td>
+									</tr>	
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+				
+		</body>
 </html>
